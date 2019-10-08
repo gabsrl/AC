@@ -1,0 +1,8 @@
+instruções do lab
+- para rodar o qemu-system-arm -M versatilepb -cpu arm1176 -m 256 -drive file=2019-07-10-raspbian-buster-lite.img,format=raw -net nic -net user,hostfwd=tcp::10022-:22 -dtb versatile-pb.dtb -kernel kernel-qemu-4.14.79-stretch -append 'rw console=ttyAMA0 root=/dev/sda2 panic=1' -no-reboot -serial stdio 
+
+- Usar as opções ​ -O0 ​ (sem otimização) e ​ -O1​ (com otimização) no compilador 
+GCC.
+
+- para pegar o tempo de execução com o time do shell: time ./programa
+    - pegar o tempo do user
