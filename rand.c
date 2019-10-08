@@ -1,13 +1,14 @@
-#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-// esta com problemas, vamos verficar
+#include <stdio.h>
 
 #define INT_MAX 2147483647 // 2^31 -1 
 
 unsigned int rseed = 1; 
 
 unsigned int rand() {
-    return rseed = (rseed * 1664525 + 101390422) & INT_MAX;
+    return rseed = (rseed * 1664525 + 1013904223) & INT_MAX;
 }
 
 
