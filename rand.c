@@ -2,12 +2,12 @@
 
 // esta com problemas, vamos verficar
 
-#define INT_MAX 2147483647
+#define INT_MAX 2147483647 // 2^31 -1 
 
-int rseed = 0; 
+unsigned int rseed = 1; 
 
-int rand() {
-    return rseed = (rseed * 1664525 + 1013904223) & INT_MAX;
+unsigned int rand() {
+    return rseed = (rseed * 1664525 + 101390422) & INT_MAX;
 }
 
 
