@@ -1,0 +1,1 @@
+; equacao do segundo grau.
